@@ -1,0 +1,1128 @@
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: #fff;
+    z-index: 999999999;
+    margin: 0 auto;
+}
+
+.header .inner {
+    position: relative;
+}
+
+.header button {
+    font-size: 17px;
+    letter-spacing: -0.03em;
+    color: #171717;
+    font-family: 'NanumSquare', sans-serif !important;
+}
+
+header .logo {
+    position: absolute;
+    width: 200px;
+    margin-top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header .left li,
+header .right li {
+    margin: 25px 0;
+    padding-right: 25px;
+}
+
+
+header .left li {
+    float: left;
+}
+
+header .right {
+    float: right;
+}
+
+header .right li {
+    float: left;
+}
+
+header .right li:last-child {
+    padding-right: 0;
+}
+
+.sidebarWrap {
+    display: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #f4e4da;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 70px;
+}
+
+.sidebar a {
+    padding: 8px 8px 15px 20px;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.sidebar a:hover {
+    color: #891e7a;
+    font-weight: 1000;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 35px;
+}
+
+/* main */
+.main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main .webvideo {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+.main .mobilevideo {
+    display: none;
+}
+
+.main h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fdf6f6;
+    font-size: 80px;
+    letter-spacing: -0.02em;
+    z-index: 1;
+}
+
+.main .highlight {
+    position: absolute;
+    top: 48.5%;
+    left: 30%;
+    width: 825px;
+    height: 60px;
+    background-color: #f4bd99;
+    z-index: 0;
+}
+
+.main button {
+    font-size: 25px;
+    color: #fdf6f6;
+    z-index: -98;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: -0.09em;
+    border: 2px solid #fdf6f6;
+    padding: 10px 20px;
+    border-radius: 30px;
+    z-index: 0;
+    transition: all .4s;
+}
+
+.main button:hover {
+    background-color: #fdf6f6;
+    color: #f4bd99;
+}
+
+/* title */
+.aboutus,
+.howitworks,
+.review,
+.faq {
+    position: relative;
+    text-align: center;
+    padding-top: 52px;
+}
+
+.aboutus h3,
+.howitworks h3,
+.review h3,
+.faq h3 {
+    color: #2a2a2a;
+    font-size: 25px;
+}
+
+.aboutus h3 span,
+.howitworks h3 span,
+.review h3 span,
+.faq h3 span {
+    font-size: 33px;
+}
+
+.aboutus h3::after,
+.howitworks h3::after,
+.review h3::after,
+.faq h3::after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 5%;
+    height: 2px;
+    background-color: #2a2a2a;
+    margin-top: 3px;
+}
+
+/* aboutus */
+.aboutus .retail {
+    padding-top: 70px;
+    padding-bottom: 96px;
+}
+
+.aboutus .aboutustable {
+    position: relative;
+    height: 270px;
+    background-color: #bb7cb2;
+    text-align: center;
+    font-size: 19px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: #f3f3f3;
+}
+
+.aboutus .aboutustable p {
+    display: inline-block;
+}
+
+.aboutus .aboutustable .icons {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aboutus .aboutustable .describe {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.aboutus .aboutustable .describe .firstdes,
+.aboutus .aboutustable .describe .seconddes {
+    padding-right: 142px;
+}
+
+.aboutus .aboutustable .icons .firsticon {
+    padding-left: 210px;
+    padding-right: 180px;
+}
+
+.aboutus .aboutustable .icons .secondicon {
+    padding-right: 160px;
+}
+
+/* how it works */
+.howitworks .title {
+    margin-bottom: 180px;
+}
+
+.howitworks .steps {
+    margin-bottom: 205px;
+}
+
+.howitworks .steps>div {
+    display: inline-block;
+}
+
+.howitworks .steps .firststep,
+.howitworks .steps .secondstep {
+    margin-right: 34px;
+}
+
+.howitworks .steps .firststep .firsticon,
+.howitworks .steps .secondstep .secondicon,
+.howitworks .steps .thirdstep .thirdicon {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #4865c9;
+    margin-bottom: 28px;
+}
+
+.howitworks .steps img {
+    padding: 60px;
+}
+
+.howitworks .steps p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.howitworks .steps span {
+    margin-top: 0.5%;
+    margin-left: 8%;
+    position: absolute;
+    color: #4865c9;
+    width: 40px;
+    height: 40px;
+    background-color: #f4e4da;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* wine of the month */
+.wineofthemonth {
+    width: 100%;
+    background-image: url(../image/bk_wineofthemonth.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 480px;
+    overflow: hidden;
+    padding: 60px 0;
+    margin-bottom: 90px;
+}
+
+.wineofthemonth .slide {
+    text-align: center;
+    position: relative;
+}
+
+.wineofthemonth .slide .broc {
+    height: 600px;
+    position: absolute;
+    transform: rotate(-8deg);
+    top: -65px;
+    left: 400px;
+}
+
+.wineofthemonth .slide .land {
+    height: 600px;
+    position: absolute;
+    transform: rotate(-8deg);
+    top: -65px;
+    left: 500px;
+}
+
+.wineofthemonth .slide .info {
+    color: #f9f7f7;
+    padding-top: 56px;
+    padding-left: 20px;
+}
+
+.wineofthemonth .slide .info h3 {
+    font-size: 40px;
+    padding-bottom: 22px;
+}
+
+.wineofthemonth .slide .info h4 {
+    font-size: 35px;
+    padding-bottom: 25px;
+    font-weight: 100;
+}
+
+.wineofthemonth .slide .info h5 {
+    font-size: 25px;
+    padding-bottom: 25px;
+    font-weight: 100;
+}
+
+.wineofthemonth .slide .info .tastingnote {
+    padding-right: 100px;
+    padding-bottom: 5px;
+}
+
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+    background: none;
+}
+
+.bx-wrapper .bx-viewport {
+    overflow:visible !important;
+}
+
+.bx-wrapper img {
+    display: inline;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    margin-top: 0;
+}
+
+/* review */
+.review {
+    background-color: #f0f2f7;
+    padding: 56px 0;
+}
+
+.review .instagram ul {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 56px
+}
+
+.review .instagram img {
+    padding: 0 10px 20px 10px;
+}
+
+.review .instagram ul:nth-child(3),
+.review .instagram ul:nth-child(6) {
+    padding-right: 0;
+}
+
+.review .instagram ul li:hover img {
+    opacity: 0.2;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.instareview {
+    position: relative;
+}
+
+.instagram .reviewtext {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transition: all 0.5s;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.instareview:hover .reviewtext {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+
+/* faq */
+.accordion {
+    padding: 56px 0px;
+}
+
+.accordion a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+    cursor: pointer;
+    color: #891e7a;
+}
+
+.accordion a:hover::after {
+    border: 1px solid #891e7a;
+}
+
+.accordion a.active {
+    color: #891e7a;
+    border-bottom: 1px solid #891e7a;
+}
+
+.accordion a::after {
+    background-image: url(../icon/down-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1rem;
+    display: inline-block;
+    transition: all 1s;
+    content: '';
+    position: absolute;
+    right: 1rem;
+    color: #7288a2;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #7288a2;
+}
+
+.accordion a.active::after {
+    background-image: url(../icon/down-arrow.png);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1rem;
+    transition: all 0.5s;
+    display: inline-block;
+    content: '';
+    color: #bb7cb2;
+    border: 1px solid #bb7cb2;
+}
+
+.accordion .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    clear: both;
+    transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.accordion .content.active {
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    transition: all 0.35s ease 0.15s;
+}
+
+
+/* footer */
+footer {
+    height: 200px;
+    background-color: #bb7cb2;
+    color: #f9f7f7;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+footer .inner {
+    padding-top: 33px;
+}
+
+footer .leftmenu {
+    float: left;
+}
+
+footer .rightmenu {
+    float: right;
+    text-align: right;
+}
+
+footer .rightmenu .sns {
+    padding-bottom: 13px;
+}
+
+footer .rightmenu .sns .facebook {
+    padding: 0 6px;
+}
+
+footer .rightmenu .sns .twitter:hover,
+footer .rightmenu .sns .facebook:hover,
+footer .rightmenu .sns .instagram:hover {
+    animation-name: rol;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+@keyframes rol {
+    0% {
+        transform: translateY(0%)
+    }
+
+    100% {
+        transform: translateY(-40%)
+    }
+}
+
+@media(max-width:1600px) {
+    .main h1{
+        font-size: 60px;
+    }
+
+    .main .highlight{
+        top: 48.5%;
+        left: 32.5%;
+        width: 600px;
+        height: 46px;
+    }
+
+    .main button{
+        margin-top: 8px;
+    }
+
+    .wineofthemonth .slide .broc{
+        left: 250px;
+    }
+
+    .wineofthemonth .slide .land{
+        left: 350px;
+    }
+
+    .howitworks .steps span{
+        margin-left: 10%;
+    }
+}
+
+@media(max-width:1400px) {
+    .main h1{
+        font-size: 60px;
+    }
+
+    .main .highlight{
+        top: 49%;
+        left: 30.3%;
+        width: 600px;
+        height: 46px;
+    }
+    
+    .main button{
+        margin-top: 0px;
+    }
+
+    .wineofthemonth .slide .broc{
+        left: 160px;
+    }
+
+    .wineofthemonth .slide .land{
+        left: 320px;
+    }
+
+    .howitworks .steps span{
+        margin-left: 10.5%;
+    }
+}
+
+@media(max-width:480px) {
+    .inner {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* header */
+    .header {
+        width: 100vw;
+        height: 50px;
+        top: 0;
+        position: fixed;
+        background-color: #fff;
+        z-index: 999999999;
+    }
+
+    .header button {
+        font-size: 10px;
+        letter-spacing: -0.03em;
+    }
+
+    header .logo {
+        width: 130px;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    header .left li,
+    header .right li {
+        display: none;
+    }
+
+    .sidebarWrap {
+        display: block;
+    }
+
+    header .inner .openbtn {
+        position: absolute;
+        right: 0;
+        font-size: 33px;
+        cursor: pointer;
+        line-height: 50px;
+        padding: 0 15px;
+        border: none;
+    }
+
+    /* main */
+
+    .main .webvideo {
+        display: none;
+    }
+
+    .main .mobilevideo {
+        display: block;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    .main .mobilevideo video {
+        width: 100%;
+    }
+
+    .main h1 {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 38px;
+        width: 50%;
+        text-align: center;
+        letter-spacing: -0.05em;
+        line-height: 50px;
+    }
+
+    .main .highlight {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 55%;
+        opacity: 0.7;
+        height: 40%;
+    }
+
+    .main button {
+        font-size: 24px;
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translateX(-50%);
+        letter-spacing: -0.1em;
+        border: 2px solid #fdf6f6;
+        padding: 4px 10px;
+    }
+
+    /* title */
+    .aboutus,
+    .howitworks,
+    .review,
+    .faq {
+        position: relative;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .aboutus h3,
+    .howitworks h3,
+    .review h3,
+    .faq h3 {
+        font-size: 15px;
+    }
+
+    .aboutus h3 span,
+    .howitworks h3 span,
+    .review h3 span,
+    .faq h3 span {
+        font-size: 20px;
+    }
+
+    .aboutus h3::after,
+    .howitworks h3::after,
+    .review h3::after,
+    .faq h3::after {
+        content: '';
+        display: block;
+        margin: auto;
+        width: 5%;
+        height: 2px;
+        background-color: #2a2a2a;
+        margin-top: 3px;
+    }
+
+    /* aboutus */
+    .aboutus .retail {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-image: url(../image/aboutus2.png);
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+
+    .aboutus img {
+        display: none;
+    }
+
+    .aboutus .aboutustable {
+        position: relative;
+        height: 320px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: -0.03em;
+    }
+
+    .aboutus .aboutustable p {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutus .aboutustable .icons {
+        display: none;
+    }
+
+    .aboutus .aboutustable .describe {
+        position: relative;
+        top: 43%;
+        transform: translateY(-50%);
+    }
+
+    .aboutus .aboutustable .describe .firstdes,
+    .aboutus .aboutustable .describe .seconddes,
+    .aboutus .aboutustable .describe .thirddes {
+        padding-right: 0px;
+        padding-top: 30px;
+    }
+
+    .aboutus .aboutustable .describe .firstdes::after,
+    .aboutus .aboutustable .describe .seconddes::after {
+        content: '';
+        display: block;
+        margin: auto;
+        width: 5%;
+        height: 2px;
+        background-color: #f0f2f7;
+        margin-top: 30px;
+    }
+
+
+    .aboutus .aboutustable .icons .firsticon {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .aboutus .aboutustable .icons .secondicon {
+        padding-right: 0px;
+    }
+
+    /* how it works */
+    .howitworks .title {
+        margin-bottom: 60px;
+    }
+
+    .howitworks .steps {
+        margin-bottom: 80px;
+    }
+
+    .howitworks .steps>div {
+        display: block;
+    }
+
+    .howitworks .steps .firststep,
+    .howitworks .steps .secondstep {
+        margin: 0
+    }
+
+    .howitworks .steps .firststep .firsticon,
+    .howitworks .steps .secondstep .secondicon,
+    .howitworks .steps .thirdstep .thirdicon {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #4865c9;
+        margin-bottom: 15px;
+    }
+
+    .howitworks .steps img {
+        padding: 60px;
+    }
+
+    .howitworks .steps p {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    /* wine of the month */
+    .wineofthemonth {
+        width: 100%;
+        background-image: url(../image/bk_wineofthemonth.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 480px;
+        overflow: hidden;
+        padding: 30px 0;
+        margin-bottom: 90px;
+    }
+
+    .wineofthemonth .slide {
+        text-align: center;
+        position: relative;
+    }
+
+    .wineofthemonth .slide .broc {
+        height: 500px;
+        position: absolute;
+        opacity: 0.3;
+        transform: rotate(-8deg);
+        top: -20px;
+        left: 40px;
+        z-index: -1;
+    }
+
+    .wineofthemonth .slide .land {
+        height: 450px;
+        position: absolute;
+        transform: rotate(-8deg);
+        opacity: 0.32;
+        top: 0px;
+        left: 170px;
+        z-index: -1;
+    }
+
+    .wineofthemonth .slide .info {
+        color: #f9f7f7;
+        padding-top: 60px;
+        padding-left: 5px;
+    }
+
+    .wineofthemonth .slide .info h3 {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+
+    .wineofthemonth .slide .info h4 {
+        font-size: 26px;
+        padding-bottom: 20px;
+        font-weight: 100;
+    }
+
+    .wineofthemonth .slide .info h5 {
+        font-size: 26px;
+        padding-bottom: 20px;
+        font-weight: 100;
+    }
+
+    .wineofthemonth .slide .info .tastingnote {
+        padding-right: 100px;
+        padding-bottom: 5px;
+    }
+
+    .bx-wrapper {
+        box-shadow: none;
+        border: none;
+        background: none;
+    }
+
+    .bx-wrapper .bx-viewport {
+        overflow: visible !important;
+    }
+
+    .bx-wrapper img {
+        display: inline;
+    }
+
+    .bx-wrapper .bx-controls-direction a {
+        margin-top: 0;
+    }
+
+    /* review */
+    .review {
+        background-color: #f0f2f7;
+        padding: 56px 0;
+    }
+
+    .review .instagram ul {
+        position: relative;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 56px
+    }
+
+    .review .instagram img {
+        padding: 0 10px 10px 10px;
+        width: 80%;
+    }
+
+    .review .instagram ul:nth-child(3),
+    .review .instagram ul:nth-child(6) {
+        padding-right: 0;
+    }
+
+    .instareview {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .instagram .reviewtext {
+        left: 0;
+        padding: 0 35px 30px 35px;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        opacity: 1;
+        transition: all 0.5s;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .review .instagram ul li:hover img {
+        opacity: 1;
+    }
+
+    .instareview:hover .reviewtext {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* faq */
+    .accordion {
+        padding: 56px 0px;
+        width: 91%;
+    }
+
+    .accordion a {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 3rem 1rem 1rem;
+        color: #7288a2;
+        font-size: 1.15rem;
+        font-weight: 400;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .accordion a:hover,
+    .accordion a:hover::after {
+        cursor: pointer;
+        color: #891e7a;
+    }
+
+    .accordion a:hover::after {
+        border: 1px solid #891e7a;
+    }
+
+    .accordion a.active {
+        color: #891e7a;
+        border-bottom: 1px solid #891e7a;
+    }
+
+    .accordion a::after {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1rem;
+        display: inline-block;
+        transition: all 1s;
+        content: '';
+        position: absolute;
+        right: 1rem;
+        color: #7288a2;
+        padding: 3px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #7288a2;
+    }
+
+    .accordion a.active::after {
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1rem;
+        transition: all 0.5s;
+        display: inline-block;
+        content: '';
+        color: #bb7cb2;
+        border: 1px solid #bb7cb2;
+    }
+
+    .accordion .content {
+        opacity: 0;
+        padding: 0 1rem;
+        max-height: 0;
+        border-bottom: 1px solid #e5e5e5;
+        overflow: hidden;
+        clear: both;
+        transition: all 0.2s ease 0.15s;
+    }
+
+    .accordion .content p {
+        font-size: 1.05rem;
+        font-weight: 400;
+    }
+
+    .accordion .content.active {
+        opacity: 1;
+        padding: 1rem;
+        max-height: 100%;
+        transition: all 0.35s ease 0.15s;
+    }
+
+    /* footer */
+    footer {
+        width: 100%;
+        height: 200px;
+        background-color: #bb7cb2;
+        color: #f9f7f7;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    footer .inner {
+        padding-top: 33px;
+    }
+
+    footer .leftmenu {
+        float: left;
+        padding-left: 20px;
+    }
+
+    footer .rightmenu {
+        float: right;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    footer .rightmenu .sns {
+        padding-bottom: 13px;
+    }
+
+    footer .rightmenu .sns .facebook {
+        padding: 0 6px;
+    }
+}
+
+@media(max-width:380px){
+    .main h1{
+        font-size: 35px;
+        line-height: 45px;
+        width: 55%;
+    }
+
+    .main .highlight{
+        width: 65%;
+        height: 35%;
+    }
+
+    .main button{
+        top: 56%;
+    }
+
+    .accordion a::after{
+        margin: 0 10px;
+    }
+}
